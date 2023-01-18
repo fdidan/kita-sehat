@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/quis-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Kuisioner | Kita Sehat</title>
+</head>
+<body onload="load()">
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="gambar/LOGO.png" alt="Kita Sehat">
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="nav-active nav-home">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-active">
+                    <a href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-active">
+                    <a href="#usage">How to Use</a>
+                </li>
+            </ul>
+        </div>
+        <div class="account">
+            <ul>
+                <li class="login-nav">
+                    <div class="login" >
+                        <img src="gambar/logo-icon.png" alt="" class="login-icon">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Navbar-->
+
+    <!--Content-->
+    <div class="container">
+        <div class="outer-wrapper">
+            <form class="wrapper">
+                <div class="wrap-question">
+                    <label for="question1" class="question">1. apakah anda Mudah merasa kenyang</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question1-yes" name="question1" value="yes" onchange="saveValue('G1')">
+                            <label for="question1-yes">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="radio" id="question1-no" name="question1" value="no">
+                            <label for="question1-no">No</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question2" class="question">2. apakah Perut terasa sakit</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question2-yes" name="question2" value="yes" onchange="saveValue('G2')">
+                            <label for="question2-yes">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="radio" id="question2-no" name="question2" value="no">
+                            <label for="question2-no">No</label>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="wrap-question">
+                    <label for="question3" class="question">3. apakah anda sering mengalami mual dan muntah</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question3-yes" name="question3" value="yes" onchange="saveValue('G3')">
+                            <label for="question3-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question3-no" name="question3" value="no">
+                            <label for="question3-no">No</label>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="wrap-question">
+                    <label for="question4" class="question">4. apakah perut anda terasa Kembung</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question4-yes" name="question4" value="yes" onchange="saveValue('G4')">
+                            <label for="question4-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question4-no" name="question4" value="no">
+                            <label for="question4-no">No</label>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="wrap-question">
+                    <label for="question5" class="question">5. apakah Terasa asam di rongga mulut </label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question5-yes" name="question5" value="yes" onchange="saveValue('G5')">
+                            <label for="question5-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question5-no" name="question5" value="no">
+                            <label for="question5-no">No</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="wrap-question">
+                    <label for="question6" class="question">6. apakah Dada dan tenggorokan terasa nyeri dan tersumbat</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question6-yes" name="question6" value="yes" onchange="saveValue('G6')">
+                            <label for="question6-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question6-no" name="question6" value="no">
+                            <label for="question6-no">No</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="wrap-question">
+                    <label for="question7" class="question">7. apakah anda sering mengalami Cegukan</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question7-yes" name="question7" value="yes" onchange="saveValue('G7')">
+                            <label for="question7-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question7-no" name="question7" value="no">
+                            <label for="question7-no">No</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="wrap-question">
+                    <label for="question8" class="question">8. apakah anda sering Bersendawa</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question8-yes" name="question8" value="yes" onchange="saveValue('G8')">
+                            <label for="question8-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question8-no" name="question8" value="no">
+                            <label for="question8-no">No</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="wrap-question">
+                    <label for="question9" class="question">9. apakah anda sering mengalami Batuk Kering</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question9-yes" name="question9" value="yes" onchange="saveValue('G9')">
+                            <label for="question9-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question9-no" name="question9" value="no">
+                            <label for="question9-no">No</label>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="wrap-question">
+                    <label for="question10" class="question">10. apakah anda sulit menelan makanan</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question10-yes" name="question10" value="yes" onchange="saveValue('G10')">
+                            <label for="question10-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question10-no" name="question10" value="no">
+                            <label for="question10-no">No</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question11" class="question">11. apakah Nafsu makan berkurang</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question11-yes" name="question11" value="yes" onchange="saveValue('G12')">
+                            <label for="question11-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question11-no" name="question11" value="no">
+                            <label for="question11-no">No</label></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question12" class="question">12. apakah anda mengalami Penurunan berat badan</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question12-yes" name="question12" value="yes" onchange="saveValue('G13')">
+                            <label for="question12-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question12-no" name="question12" value="no">
+                            <label for="question12-no">No</label></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question13" class="question">13. apakah anda merasa Perut tidak nyaman setelah konsumsi makanan berlemak</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question13-yes" name="question13" value="yes" onchange="saveValue('G14')">
+                            <label for="question13-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question13-no" name="question13" value="no">
+                            <label for="question13-no">No</label></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question14" class="question">14. apakah anda mengalami BAB berdarah</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question14-yes" name="question14" value="yes" onchange="saveValue('G15')">
+                            <label for="question14-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question14-no" name="question14" value="no">
+                            <label for="question14-no">No</label></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question15" class="question">15. apakah anda mengalami Muntah darah</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question15-yes" name="question15" value="yes" onchange="saveValue('G16')">
+                            <label for="question15-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question15-no" name="question15" value="no">
+                            <label for="question15-no">No</label></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question16" class="question">16. apakah Perut anda membengkak</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question16-yes" name="question16" value="yes" onchange="saveValue('G16')">
+                            <label for="question16-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question16-no" name="question16" value="no">
+                            <label for="question16-no">No</label></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question17" class="question">17. apakah anda mengalami Nyeri pada ulu hati</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question17-yes" name="question17" value="yes" onchange="saveValue('G17')">
+                            <label for="question17-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question17-no" name="question17" value="no">
+                            <label for="question17-no">No</label></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-question">
+                    <label for="question18" class="question">18. apakah anda mengalami Sensasi terbakar di dada</label>
+                    <div class="jawab">
+                        <div class="yes">
+                            <input type="radio" id="question18-yes" name="question18" value="yes" onchange="saveValue('G18')">
+                            <label for="question18-yes">Yes</label></div>
+                        <div class="no">
+                            <input type="radio" id="question18-no" name="question18" value="no">
+                            <label for="question18-no">No</label></div>
+                    </div>
+                </div>
+                <button class="submit-btn" onclick="akhir()">SUBMIT</button>
+            </form>
+            <script src="js/quis.js"></script>
+        </div>
+    </div>
+    <!--Content-->
+</body>
+</html>

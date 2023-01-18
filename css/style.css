@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+    background: #F3F3FD;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    padding-top: 2rem;
+    margin: auto;
+    flex-direction: row;
+    width: 100%;
+    max-height: 3rem;
+}
+
+.logo img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.navbar .logo{
+    display: flex;
+    padding-right: 2rem;
+    max-width: 25%;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.navbar .nav{
+    display: flex;
+    max-width: 50%;
+    height: 40px;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+}
+
+.navbar .account{
+    display: flex;
+    max-width: 25%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    align-self:center;
+    margin-right: 20px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: inherit;
+}
+
+.navbar ul li {
+    width: fit-content;
+    margin: 0 2rem;
+    height: inherit;
+    display: flex;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #1746A2;
+    align-self: center;
+    font-weight: 500;
+}
+
+.navbar .account ul li{
+    width: 104px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.account ul li div{
+    align-self: center;
+    color: #1746A2;
+}
+
+.account ul li div span{
+    font-weight: 600;
+    font-size: small;
+}
+
+.outer-wrapper{
+    
+    width: 300vmax;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 300vmax;
+    height: 100%;
+}
+
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100vmax;
+}
+
+.signUptext, .logintext {
+    position: relative;
+    width: 40vmax;
+    font-size: large;
+    left: 10%;
+}
+
+.registlink, .loginlink{
+    text-decoration: none;
+    color: #1746A2;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    width: 37vmax;
+    align-self: flex-end;
+    left: 20px;
+}
+
+.hero img{
+    align-self: flex-end;
+}
+
+.account-menu{
+    width: 35vmax;
+}
+
+.register {
+    position: absolute;
+    bottom: 10rem;
+    right: 5rem;
+    align-items: center;
+    height: 23rem;
+    background-color: #F3F3FD;
+    margin-right: 40px;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    align-self: center;
+    height: 20rem;
+}
+
+
+.register input{
+    background-color: #EAF0F7;
+    margin-bottom: 20px;
+    border: none;
+    height: 45px;
+    font-weight: 500;
+}
+
+.register button{
+    margin-top: 50px;
+    width: 16rem;
+    height: 45px;
+    border: none;
+    background-color: #4461F2;
+    color: #EAF0F7;
+    font-weight: bold;
+    box-shadow: 1px 11.8055px 20.6596px 3.93517px rgba(68, 97, 242, 0.15);
+    border-radius: 10px;
+}
+
+.signin{
+    position: absolute;
+    bottom: 11rem;
+    right: 5rem;
+    margin-right: 40px;
+}
+
+.signin form{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    align-self: center;
+    height: 20rem;
+}
+
+.signin input{
+    background-color: #EAF0F7;
+    margin-bottom: 20px;
+    border: none;
+    height: 45px;
+    font-weight: 500;
+}
+
+.signin button{
+    margin-top: 50px;
+    width: 16rem;
+    height: 45px;
+    border: none;
+    background-color: #4461F2;
+    color: #EAF0F7;
+    font-weight: bold;
+    box-shadow: 1px 11.8055px 20.6596px 3.93517px rgba(68, 97, 242, 0.15);
+    border-radius: 10px;
+}
+
+/*bg-home*/
+.bg-home1{
+    position: absolute;
+    left: 17rem;
+    top: 22rem;
+    width: 9rem;
+    height: 9rem;
+    background: #4461F2;
+    filter: blur(250px);
+    opacity:0.5;
+}
+
+.bg-home2{
+    position: absolute;
+    left: 12rem;
+    top: 19rem;
+    width: 7rem;
+    height: 7rem;
+    background: #4461F2;
+    filter: blur(250px);
+    opacity:0.5;
+}
+/*bg-home*/
+
+
+.aboutus{
+    width: 100vmax;
+}
+
+.usage {
+    width: 100vmax;
+}
+
+
+
+/*properti link aktif*/
+.account span:hover{
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 2px solid #125FBF;
+    font-weight: bold;
+}
+
+.active-acc {
+    background-color: #125FBF;
+    border-radius: 12px;
+}
+
+.txt-active{
+    color: #EAF0F7;
+}

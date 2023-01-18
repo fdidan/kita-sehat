@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+    background: #F3F3FD;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3rem;
+    background-color: #fff;
+}
+
+.logo img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.navbar .logo{
+    display: flex;
+    padding-right: 2rem;
+    max-width: 25%;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.navbar .nav{
+    display: flex;
+    max-width: 50%;
+    height: 40px;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    font-size: small;
+    font-weight: bold;
+}
+
+.navbar .account{
+    display: flex;
+    max-width: 25%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    align-self:center;
+    margin-right: 20px;
+    
+}
+
+.navbar .account ul{
+    background-color: #000;
+    border-radius: 12px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: inherit;
+    
+}
+
+.navbar ul li {
+    width: fit-content;
+    margin: 0 2rem;
+    height: inherit;
+    display: flex;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    align-self: center;
+}
+
+.navbar .account ul li{
+    width: 57px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.account ul li div{
+    align-self: center;
+    color: #1746A2;
+}
+
+.account ul li div img{
+    width: 1.5rem;
+}
+
+.outer-wrapper{
+    
+    width: 300vmax;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 300vmax;
+    height: 100%;
+}
+
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vmax;
+    padding-top: 3rem;
+}
+
+.menu-home{
+    display: flex;
+    flex-direction: row;
+    background-color: #3A8EF6;
+    width: 100%;
+    height: 12rem;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-start;
+    position: relative;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+}
+
+.menu span{
+    color: #fff;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.menu .sambut{
+    font-size: x-large;
+    padding-bottom: 0.5rem;
+}
+
+.menu button{
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    width: 10rem;
+    height: 2rem;
+    font-size:x-small;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img{
+    width: 12rem;
+    align-self: center;
+}
+
+.hero img{
+    align-self: flex-end;
+}
+
+.fitur{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.fitur1, .fitur2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: 7rem;
+}
+
+.fitur1 img, .fitur1 span, .fitur2 img, .fitur2 span{
+    align-self: center;
+}
+
+
+
+.aboutus{
+    width: 100vmax;
+}
+
+.usage {
+    width: 100vmax;
+}
+
+
+
+/*properti link aktif*/
+.account span:hover{
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}

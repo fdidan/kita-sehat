@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F3F3FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vmin;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    top: 2rem;
+    margin: auto;
+    flex-direction: row;
+    width: 100%;
+    max-height: 3rem;
+}
+
+
+.logo img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.navbar .logo{
+    display: flex;
+    padding-right: 2rem;
+    max-width: 25%;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.navbar .nav{
+    display: flex;
+    max-width: 50%;
+    height: 40px;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    font-size: small;
+    font-weight: bold;
+}
+
+.navbar .account{
+    display: flex;
+    max-width: 25%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    align-self:center;
+    margin-right: 20px;
+    
+}
+
+.navbar .account ul{
+    background-color: #000;
+    border-radius: 12px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: inherit;
+    
+}
+
+.navbar ul li {
+    width: fit-content;
+    margin: 0 2rem;
+    height: inherit;
+    display: flex;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    align-self: center;
+}
+
+.navbar .account ul li{
+    width: 57px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.account ul li div{
+    align-self: center;
+    color: #1746A2;
+}
+
+.account ul li div img{
+    width: 1.5rem;
+}
+
+.container{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.hasil-diagnosa{
+    background-color: #EFEFEF; 
+    border: solid 1px #3A8EF6;
+    border-radius: 15px;
+    align-self: center;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.hasil-diagnosa h2{
+    margin: 3.5rem 0;
+}
+
+.hasil-diagnosa p{
+    text-align: justify;
+}
