@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Welcome | Kita Sehat</title>
+</head>
+<body onload="load()">
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="../gambar/LOGO.png" alt="Kita Sehat">
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="nav-active nav-home">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-active">
+                    <a href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-active">
+                    <a href="#usage">How to Use</a>
+                </li>
+            </ul>
+        </div>
+        <div class="account">
+            <ul>
+                <li class="login-nav">
+                    <div class="login" >
+                        <span class="login-txt">Sign In</span>
+                    </div>
+                </li>
+                <li class="acc-active">
+                    <div class="regist" >
+                        <span class="regist-txt">Register</span> 
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Navbar-->
+
+    <!--content-->
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <div class="home" id="home">
+                <div class="bg-home1"></div>
+                <div class="bg-home2"></div>
+                <div class="signUptext">
+                    <h1>Sign up to<br>get your nutrients</h1><br>
+                    <p>If you already have an <br> account click sign in and <br> enjoy our <a href="#signin" class="loginlink">website</a></p>
+                </div>
+                <div class="logintext">
+                    <h1>Sign in to<br>get your nutrients</h1><br>
+                    <p>if you don’t have an<br>account<br>you can <a href="#signin" class="registlink">Register here!</a></p>
+                </div>
+                <div class="hero">
+                    <img src="../gambar/hero-img-home.png" alt="">
+                </div>
+                <div class="account-menu">
+                    <div class="signin" id="signin">
+                        <form id="loginForm">
+                            <h2>Welcome back!</h2>
+                            <input type="text" name="username" id="logUsername" placeholder="  Username">
+                            <input type="password" name="password" id="logPassword" placeholder="  Password">
+                            <button id="logSubmit">SignIn</button>
+                        </form>
+                    </div>
+                    <div class="register" id="register">
+                        <form id="registerForm">
+                            <h2>Create yours now!</h2>
+                            <input type="text" name="username" id="regUsername" placeholder="  Username">
+                            <input type="password" name="confirm" id="regPassword" placeholder="  Password">
+                            <button id="reqSubmit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus" id="aboutus">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur facere eveniet hic sapiente tempore reiciendis voluptatum debitis, ad omnis, commodi doloribus possimus. Saepe inventore quod, excepturi iste voluptas ab.</p>
+            </div>
+            <div class="usage" id="usage">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti reiciendis fugiat et voluptatem necessitatibus minus eos suscipit facere atque. Quos veniam totam quia rem dolorem id, in atque saepe optio?</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--content-->
+    <script src="../js/showhideform.js"></script>
+    <script>src="app.js"</script>
+</body>
+</html>
